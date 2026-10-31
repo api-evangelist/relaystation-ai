@@ -64,18 +64,33 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-RelayStation AI is an emerging technology company focused on providing advanced AI-driven relay services for real-time data transmission and processing across distributed networks. The platform enables developers and enterprises to integrate intelligent routing, transformation, and analytics capabilities into their applications, leveraging scalable cloud infrastructure and cutting‑edge machine learning models. RelayStation AI aims to simplify complex data workflows, improve latency, and enhance reliability for IoT, edge computing, and enterprise integration scenarios, positioning itself as a pivotal middleware solution in the evolving AI and data ecosystem.
+Relaystation is a platform that provides pay‑per‑call storage and cryptographic proof for AI agents and developers. It enables agents to sign a single USDC payment and receive a result without needing an account, while developers can top up and use an API key to store data, handoff results, and verify integrity. Built for AI‑driven workflows, Relaystation offers a lightweight, on‑demand storage layer that integrates with LLMs and agent frameworks, delivering trust and auditability for each call.
 
-**Areas:** Company · AI · Data-Relay · Real-time · Cloud
+**Areas:** AI · Storage · Payments · DeveloperTools · API
 
 ## relaystation-ai on APIs.io
 
 Everything profiled for relaystation-ai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/relaystation-ai/](https://apis.io/providers/relaystation-ai/)** — or go straight to one of the APIs or properties below.
 
-### APIs (2)
+### APIs (17)
 
-- [Relaystation API](https://apis.io/apis/relaystation-ai/relaystation-api/) — Pay-per-call API platform for AI agents and developers.
-- [Relaystation Api API](https://apis.io/apis/relaystation-ai/relaystation-api-api/) — Pay-per-call API platform for AI agents and developers. Baton — a prepaid storage object configured along five groups (write behavior · capacity · sharing ·…
+- [relaystation-ai Account API](https://apis.io/apis/relaystation-ai/relaystation-ai-account-api/) — Account & billing — balance, transactions, top-up, API keys, product enrollment.
+- [relaystation-ai Auth API](https://apis.io/apis/relaystation-ai/relaystation-ai-auth-api/) — Account & billing — wallet-JWT challenge/verify (the crypto-native sign-in).
+- [relaystation-ai Baton API](https://apis.io/apis/relaystation-ai/relaystation-ai-baton-api/) — Storage — store a file, share it by link (no account for the recipient), collaborate on a doc with a person or another agent, save state snapshots, keep an…
+- [relaystation-ai Baton Pricing API](https://apis.io/apis/relaystation-ai/relaystation-ai-baton-pricing-api/) — Storage — public preconfigs + price-of-record (quote before you store).
+- [relaystation-ai Baton Trust API](https://apis.io/apis/relaystation-ai/relaystation-ai-baton-trust-api/) — Storage trust — notarize a document (witness its hash, kept 7 years), prove a witnessed document offline, verify a hash-chain's integrity.
+- [relaystation-ai Bridge API](https://apis.io/apis/relaystation-ai/relaystation-ai-bridge-api/) — Messaging & coordination — give an agent an email address, message another agent, read an agent inbox, ask a human and wait for a reply, or notify a human…
+- [relaystation-ai Contracts API](https://apis.io/apis/relaystation-ai/relaystation-ai-contracts-api/) — Agreements & arbitration — create a binding-by-goodwill agreement (a hash-chained, auto-witnessed record), sign it (EIP-712 wallet or authenticated account;…
+- [relaystation-ai Cputools API](https://apis.io/apis/relaystation-ai/relaystation-ai-cputools-api/) — Stateless pay-per-call CPU utilities, grouped by job: Microsoft Office (Word/Excel/PowerPoint → PDF, generate from markdown, Excel I/O), PDF tools…
+- [relaystation-ai Discovery API](https://apis.io/apis/relaystation-ai/relaystation-ai-discovery-api/) — Discovery — OpenAPI / llms.txt / MCP advertisement / system info.
+- [relaystation-ai Docai API](https://apis.io/apis/relaystation-ai/relaystation-ai-docai-api/) — Document AI — OCR with layout, extract form fields/tables, parse invoices/receipts and identity documents, ask questions of a page (sync Textract;…
+- [relaystation-ai Esigndoc API](https://apis.io/apis/relaystation-ai/relaystation-ai-esigndoc-api/) — Documents & signatures — send a PDF for legally-binding e-signature, place signature/approval boxes, route to multiple signers and approvers in a set order,…
+- [relaystation-ai Idverify API](https://apis.io/apis/relaystation-ai/relaystation-ai-idverify-api/) — Identity & compliance — verify a government ID (passport / driver's license / national ID), run a liveness check, match a face to the ID photo, optional…
+- [relaystation-ai Llm API](https://apis.io/apis/relaystation-ai/relaystation-ai-llm-api/) — Language & AI tasks — translate, summarize, extract to JSON, classify, proofread, rewrite, sentiment, keywords, title, repair JSON. Task-based (never…
+- [relaystation-ai Location API](https://apis.io/apis/relaystation-ai/relaystation-ai-location-api/) — Location — geocode an address, reverse-geocode coordinates, search places/POIs, calculate a route (AWS Location Service). Flat pay-per-call.
+- [relaystation-ai Screening API](https://apis.io/apis/relaystation-ai/relaystation-ai-screening-api/) — Identity & compliance — screen a name against sanctions (OFAC / EU / UK; UN rides along) and Wikidata-derived PEP lists. Composable pay-per-call;…
+- [relaystation-ai Vision API](https://apis.io/apis/relaystation-ai/relaystation-ai-vision-api/) — Vision — label objects/scenes, moderate unsafe content, detect faces + attributes, compare faces, recognize celebrities, detect protective equipment (AWS…
+- [relaystation-ai Webhooks API](https://apis.io/apis/relaystation-ai/relaystation-ai-webhooks-api/) — Account & billing — outbound webhook registrations + delivery history.
 
 ### Published properties
 
@@ -86,6 +101,12 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 Event-driven and webhook contracts.
 
 - [Relaystation Ai Webhooks](https://apis.io/asyncapis/relaystation-ai/relaystation-ai-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Relaystation Ai Agentic Access](https://apis.io/agentic-access/relaystation-ai/relaystation-ai-agentic-access/)
 
 #### JSON Schema (3)
 
@@ -101,6 +122,12 @@ Linked-data contexts for the provider's vocabulary.
 
 - [Relaystation Ai Context](https://apis.io/jsonld/relaystation-ai/relaystation-ai-context/)
 
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Relaystation Ai Openapi Overlay](https://apis.io/overlays/relaystation-ai/relaystation-ai-openapi-overlay/)
+
 #### Governance rules (1)
 
 Spectral rulesets for the provider's contracts.
@@ -114,6 +141,24 @@ Authentication, trust centre, and vulnerability disclosure.
 - [Relaystation Ai Authentication](https://apis.io/security/relaystation-ai/relaystation-ai-authentication/)
 - [Relaystation Ai Domain Security](https://apis.io/security/relaystation-ai/relaystation-ai-domain-security/)
 
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Relaystation Ai Scopes](https://apis.io/scopes/relaystation-ai/relaystation-ai-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Relaystation Ai Plans Pricing](https://apis.io/plans/relaystation-ai/relaystation-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Relaystation Ai Rate Limits](https://apis.io/rate-limits/relaystation-ai/relaystation-ai-rate-limits/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
@@ -123,49 +168,51 @@ Links to the company's own pages. This repository publishes no copy of their spe
 - [Getting started](https://relaystation.ai/docs/quickstart)
 - [API reference](https://relaystation.ai/api-reference)
 - [Pricing](https://relaystation.ai/pricing)
+- [Support](https://relaystation.ai/faq)
 - [Terms of service](https://relaystation.ai/terms)
 - [Privacy policy](https://relaystation.ai/privacy)
+- [GitHub](https://github.com/relaystation)
 
 ## API Evangelist rating
 
-**Kin Score 50.8** — developing · rubric 0.25.0 · scored 2026-10-31
+**Kin Score 52.5** — developing · rubric 0.25.0 · scored 2026-10-31
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
-| Contract quality | 64.9 |
+| Discoverability | 65.0 |
+| Contract quality | 68.6 |
 | Contract governance | 79.1 |
-| Operational transparency | 7.9 |
-| Developer ergonomics | 50.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 49.3 |
 | Access clarity | 31.6 |
 
-**Agent readiness 42.6** — agent-ready (gated down from agent-native)
+**Agent readiness 55.4** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | — |
+| Agentic Access | unknown |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | served (partial credit) |
-| Idempotency | documented (partial credit) |
+| Idempotency | — |
 | Error Semantics | derived (partial credit) |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | unknown |
-| Agent Skills | — |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
-| Dry Run Mode | — |
+| Dry Run Mode | yes |
 | Delegated Identity | served (partial credit) |
 | Protected Resource Metadata | verified |
 | Dynamic Client Registration | yes |
 | Agentic Commerce | — |
 | Pagination Ratio | na |
-| Operation Distinctiveness | na |
+| Operation Distinctiveness | distinct |
 
-**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 29.2** — Payments
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/relaystation-ai/](https://apis.io/providers/relaystation-ai/).
 
